@@ -1,0 +1,10 @@
+CHANGELOG
+init.rb
+install.rb
+lib/log_methods.rb
+LICENSE
+log_methods.gemspec
+Manifest
+Rakefile
+README.rdoc
+uninstall.rb

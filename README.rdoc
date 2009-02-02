@@ -1,0 +1,36 @@
+= Log Methods
+
+Log methods shows you exactly what arguments a method was called with and what
+it returned.
+
+== Example
+
+  class Something
+    include LogMethods::Mixin
+    
+    log_method :do_it!, :logger => proc { |msg| puts msg }
+  end
+  
+== Install
+
+log_methods is just a simple gem, you can use it any of your Ruby based projects like so:
+
+  $ gem install jqr-log_methods --source http://gems.github.com
+
+  require 'rubygems'
+  gem 'jqr-log_methods'
+  
+
+As a Rails plugin:
+
+  ./script/plugin install git://github.com/jqr/log_methods.git 
+  
+Prefer gems? Add this to your environment.rb and run the following command.
+
+  config.gem 'jqr-log_methods', :lib => 'log_methods', :source => 'http://gems.github.com'
+
+  $ rake gems:install
+
+
+Homepage:: http://github.com/jqr/log_methods
+License:: Copyright (c) 2008 Elijah Miller <mailto:elijah.miller@gmail.com>, released under the MIT license
